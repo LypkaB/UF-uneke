@@ -1,1 +1,13 @@
 @import 'vendor/normalize';
+@import 'vendor/fonts';
+@import 'vendor/variables';
+
+body {
+    background-color: grey;
+}
+
+.container-fluid {
+    max-width: 1195px;
+}
+
+@import 'header';

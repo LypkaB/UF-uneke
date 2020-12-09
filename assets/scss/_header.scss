@@ -1,0 +1,38 @@
+.navbar {
+    padding-top: 0.85rem;
+    padding-bottom: 0.8rem;
+    background-color: $dark-green;
+
+    &-brand {
+        margin-right: 5.6rem;
+    }
+    &-toggler {
+        background-color: $dark-green;
+        border-color: white;
+    }
+    &-nav {
+        .nav {
+            &-item {
+                margin-right: 0.65rem;
+
+                .nav-link {
+                    font-family: Gilroy, sans-serif;
+                    font-weight: 400;
+                    color: white;
+                }
+                .dropdown-toggle::after {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .header-button {
+        background-color: transparent;
+        border: none;
+        margin-top: -0.4rem;
+
+        &:first-child {
+            margin-right: 0.7rem;
+        }
+    }
+}
