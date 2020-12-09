@@ -10,4 +10,13 @@ body {
     max-width: 1195px;
 }
 
+.sm-buttons button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
 @import 'header';
+@import 'sections/banner';
+@import 'media/media';

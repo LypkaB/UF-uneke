@@ -1,0 +1,15 @@
+@media (max-width: 575px) {
+    /*<----- Banner ----->*/
+    .banner {
+        &__title {
+            font-size: 16px;
+        }
+        h1 {
+            font-size: 26px;
+            line-height: 1.5;
+        }
+        &__btn a {
+            font-size: 14px;
+        }
+    }
+}

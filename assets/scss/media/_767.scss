@@ -1,0 +1,19 @@
+@media (max-width: 767px) {
+    /*<----- Banner ----->*/
+    .banner {
+        h1 {
+            padding-right: 0;
+            text-align: center;
+        }
+        &__title {
+            text-align: left;
+        }
+        &__about {
+            padding-left: calc(var(--bs-gutter-x)/ 2);
+            text-align: center;
+        }
+        &__btn {
+            text-align: center;
+        }
+    }
+}

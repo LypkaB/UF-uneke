@@ -1,0 +1,87 @@
+.banner {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: url('../images/banner/banner-bg.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &__overlay {
+        background: url('../images/banner/banner-overlay.svg') no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 1440px;
+        height: 100%;
+        z-index: 1;
+    }
+    .container-fluid {
+        position: relative;
+        z-index: 9;
+    }
+    span {
+        display: block;
+    }
+    &__title {
+        font-size: 19px;
+        font-weight: 700;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 46px;
+            height: 3px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            bottom: -17px;
+        }
+    }
+    h1 {
+        padding-right: 2rem;
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 57px;
+        margin-bottom: 2rem;
+    }
+    &__about {
+        padding-left: 9.5rem;
+        padding-right: 3.5rem;
+        margin-bottom: 4.2rem;
+
+        .banner__title {
+            margin-bottom: 2rem;
+        }
+        &-descr {
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+    &__btn {
+        a {
+            padding: 10px 70px;
+            font-size: 20px;
+            font-weight: 500;
+            border: 2px solid white;
+            text-decoration: none;
+        }
+        &-info {
+            color: $dark-green;
+            background-color: white;
+
+            &:hover {
+                color: $dark-green;
+            }
+        }
+        &-about {
+            color: white;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+    &__link-down {
+        display: inline-block;
+        margin-left: -1.25rem;
+        margin-bottom: 2rem;
+    }
+}

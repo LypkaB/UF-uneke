@@ -415,6 +415,13 @@ body {
   max-width: 1195px;
 }
 
+.sm-buttons button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
 .navbar {
   padding-top: 0.85rem;
   padding-bottom: 0.8rem;
@@ -444,12 +451,160 @@ body {
   vertical-align: middle;
 }
 
-.navbar .header-button {
-  background-color: transparent;
-  border: none;
+.navbar .navbar-collapse .sm-buttons button {
   margin-top: -0.4rem;
 }
 
-.navbar .header-button:first-child {
+.navbar .navbar-collapse .sm-buttons button:first-child {
   margin-right: 0.7rem;
+}
+
+.banner {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: url("../images/banner/banner-bg.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner__overlay {
+  background: url("../images/banner/banner-overlay.svg") no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 1440px;
+  height: 100%;
+  z-index: 1;
+}
+
+.banner .container-fluid {
+  position: relative;
+  z-index: 9;
+}
+
+.banner span {
+  display: block;
+}
+
+.banner__title {
+  font-size: 19px;
+  font-weight: 700;
+  position: relative;
+}
+
+.banner__title::after {
+  content: '';
+  width: 46px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+}
+
+.banner h1 {
+  padding-right: 2rem;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 57px;
+  margin-bottom: 2rem;
+}
+
+.banner__about {
+  padding-left: 9.5rem;
+  padding-right: 3.5rem;
+  margin-bottom: 4.2rem;
+}
+
+.banner__about .banner__title {
+  margin-bottom: 2rem;
+}
+
+.banner__about-descr {
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.banner__btn a {
+  padding: 10px 70px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid white;
+  text-decoration: none;
+}
+
+.banner__btn-info {
+  color: #333;
+  background-color: white;
+}
+
+.banner__btn-info:hover {
+  color: #333;
+}
+
+.banner__btn-about {
+  color: white;
+}
+
+.banner__btn-about:hover {
+  color: white;
+}
+
+.banner__link-down {
+  display: inline-block;
+  margin-left: -1.25rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 991px) {
+  /*<----- Banner ----->*/
+
+  .banner__about {
+    padding-left: 16rem;
+    padding-right: calc(var(--bs-gutter-x)/ 2);
+  }
+
+  .banner__link-down {
+    display: block;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /*<----- Banner ----->*/
+
+  .banner h1 {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .banner__title {
+    text-align: left;
+  }
+
+  .banner__about {
+    padding-left: calc(var(--bs-gutter-x)/ 2);
+    text-align: center;
+  }
+
+  .banner__btn {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  /*<----- Banner ----->*/
+
+  .banner__title {
+    font-size: 16px;
+  }
+
+  .banner h1 {
+    font-size: 26px;
+    line-height: 1.5;
+  }
+
+  .banner__btn a {
+    font-size: 14px;
+  }
 }
