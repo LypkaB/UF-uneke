@@ -3,7 +3,9 @@
 @import 'vendor/variables';
 
 body {
-    background-color: grey;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: white;
 }
 
 .container-fluid {
@@ -19,4 +21,6 @@ body {
 
 @import 'header';
 @import 'sections/banner';
+@import 'sections/portfolio';
+@import 'sections/counters';
 @import 'media/media';

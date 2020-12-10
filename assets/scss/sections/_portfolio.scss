@@ -1,0 +1,35 @@
+.portfolio {
+    padding-top: 5rem;
+    background-image: url('../images/portfolio/portfolio-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .card {
+        background-color: transparent;
+        border: none;
+
+        &-body {
+            padding: 0;
+            text-align: center;
+        }
+        &-img img {
+            width: 100%;
+        }
+        &-title {
+            font-size: 19px;
+            font-weight: 700;
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 46px;
+                height: 3px;
+                background-color: $primary;
+                position: absolute;
+                left: 50%;
+                bottom: -14px;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

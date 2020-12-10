@@ -408,7 +408,9 @@ li {
 }
 
 body {
-  background-color: grey;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: white;
 }
 
 .container-fluid {
@@ -460,7 +462,6 @@ body {
 }
 
 .banner {
-  font-family: 'Poppins', sans-serif;
   color: white;
   background: url("../images/banner/banner-bg.jpg") no-repeat;
   background-size: cover;
@@ -555,6 +556,83 @@ body {
   margin-bottom: 2rem;
 }
 
+.portfolio {
+  padding-top: 5rem;
+  background-image: url("../images/portfolio/portfolio-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portfolio .card {
+  background-color: transparent;
+  border: none;
+}
+
+.portfolio .card-body {
+  padding: 0;
+  text-align: center;
+}
+
+.portfolio .card-img img {
+  width: 100%;
+}
+
+.portfolio .card-title {
+  font-size: 19px;
+  font-weight: 700;
+  position: relative;
+}
+
+.portfolio .card-title::after {
+  content: '';
+  width: 46px;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  left: 50%;
+  bottom: -14px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.counters {
+  margin-top: -3.12rem;
+}
+
+.counters .list-group .list-group-item {
+  padding-top: 1.33rem;
+  padding-bottom: 1.33rem;
+  border-radius: 0;
+  border-color: transparent;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.counters .list-group .list-group-item::after {
+  content: '';
+  width: 71px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: -36px;
+  -webkit-transform: rotate(90deg) translateY(-50%);
+  -ms-transform: rotate(90deg) translateY(-50%);
+  transform: rotate(90deg) translateY(-50%);
+}
+
+.counters .list-group .list-group-item span {
+  display: block;
+  font-size: 19px;
+}
+
+.counters .list-group .list-group-item:last-child::after {
+  display: none;
+}
+
 @media (max-width: 991px) {
   /*<----- Banner ----->*/
 
@@ -567,6 +645,23 @@ body {
     display: block;
     text-align: center;
     margin-bottom: 0;
+  }
+
+  /*<----- Portfolio ----->*/
+
+  .portfolio {
+    padding-top: 2rem;
+  }
+
+  /*<----- Counters ----->*/
+
+  .counters {
+    margin-top: -6.12rem;
+  }
+
+  .counters .list-group {
+    padding-left: calc(var(--bs-gutter-x)/ 2);
+    padding-right: calc(var(--bs-gutter-x)/ 2);
   }
 }
 
@@ -590,6 +685,12 @@ body {
   .banner__btn {
     text-align: center;
   }
+
+  /*<----- Counters ----->*/
+
+  .counters .list-group .list-group-item span {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -606,5 +707,32 @@ body {
 
   .banner__btn a {
     font-size: 14px;
+  }
+
+  /*<----- Counters ----->*/
+
+  .counters {
+    margin-top: -6.12rem;
+  }
+
+  .counters .list-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .counters .list-group .list-group-item span {
+    font-size: 16px;
+  }
+
+  .counters .list-group .list-group-item::after {
+    width: 100%;
+    top: initial;
+    left: 0;
+    bottom: 0;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }

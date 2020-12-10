@@ -1,5 +1,4 @@
 .banner {
-    font-family: 'Poppins', sans-serif;
     color: white;
     background: url('../images/banner/banner-bg.jpg') no-repeat;
     background-size: cover;
@@ -64,11 +63,11 @@
             text-decoration: none;
         }
         &-info {
-            color: $dark-green;
+            color: $primary;
             background-color: white;
 
             &:hover {
-                color: $dark-green;
+                color: $primary;
             }
         }
         &-about {
