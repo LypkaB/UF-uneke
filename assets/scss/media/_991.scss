@@ -5,7 +5,7 @@
             padding-left: 16rem;
             padding-right: calc(var(--bs-gutter-x)/ 2);
         }
-        &__link-down {
+        &__arrow {
             display: block;
             text-align: center;
             margin-bottom: 0;
@@ -24,6 +24,16 @@
         .list-group {
             padding-left: calc(var(--bs-gutter-x)/ 2);
             padding-right: calc(var(--bs-gutter-x)/ 2);
+        }
+    }
+
+    /*<----- Products ----->*/
+    .products-slider .slick {
+        &-prev {
+            left: 38%;
+        }
+        &-next {
+            right: 38%;
         }
     }
 }

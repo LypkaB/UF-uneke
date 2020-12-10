@@ -410,6 +410,7 @@ li {
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+  color: #333;
   background-color: white;
 }
 
@@ -550,7 +551,7 @@ body {
   color: white;
 }
 
-.banner__link-down {
+.banner__arrow {
   display: inline-block;
   margin-left: -1.25rem;
   margin-bottom: 2rem;
@@ -598,6 +599,7 @@ body {
 
 .counters {
   margin-top: -3.12rem;
+  margin-bottom: 5rem;
 }
 
 .counters .list-group .list-group-item {
@@ -633,6 +635,111 @@ body {
   display: none;
 }
 
+.products {
+  padding-bottom: 3rem;
+  font-weight: 700;
+}
+
+.products__title {
+  display: block;
+  font-size: 19px;
+  text-align: center;
+  position: relative;
+}
+
+.products__title::after {
+  content: '';
+  width: 46px;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  left: 50%;
+  bottom: -13px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.products-slider .slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products-slider .slider-item__content {
+  margin-right: 20px;
+}
+
+.products-slider .slider-item__content img {
+  margin-bottom: 0.87rem;
+}
+
+.products-slider .slider-item__content span {
+  display: block;
+}
+
+.products-slider .slider-item__content span:nth-child(3) {
+  font-weight: 400;
+}
+
+.products-slider .slider-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.products-slider .slider-dots li {
+  width: 11px;
+  height: 11px;
+  margin: 5px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-color: rgba(196, 196, 196, 0.4);
+  cursor: pointer;
+}
+
+.products-slider .slider-dots li.slick-active {
+  width: 13px;
+  height: 13px;
+  border: 2px solid #333;
+  background-color: transparent;
+}
+
+.products-slider .slider-dots button {
+  display: none;
+}
+
+.products-slider .slick-btn {
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  outline: none;
+  position: absolute;
+  bottom: 4px;
+}
+
+.products-slider .slick-prev {
+  background-image: url("../images/icons/icon-arrow-prev.svg");
+  left: 44%;
+}
+
+.products-slider .slick-next {
+  background-image: url("../images/icons/icon-arrow-next.svg");
+  right: 44%;
+}
+
 @media (max-width: 991px) {
   /*<----- Banner ----->*/
 
@@ -641,7 +748,7 @@ body {
     padding-right: calc(var(--bs-gutter-x)/ 2);
   }
 
-  .banner__link-down {
+  .banner__arrow {
     display: block;
     text-align: center;
     margin-bottom: 0;
@@ -662,6 +769,16 @@ body {
   .counters .list-group {
     padding-left: calc(var(--bs-gutter-x)/ 2);
     padding-right: calc(var(--bs-gutter-x)/ 2);
+  }
+
+  /*<----- Products ----->*/
+
+  .products-slider .slick-prev {
+    left: 38%;
+  }
+
+  .products-slider .slick-next {
+    right: 38%;
   }
 }
 

@@ -1,0 +1,93 @@
+.products {
+    padding-bottom: 3rem;
+    font-weight: 700;
+
+    &__title {
+        display: block;
+        font-size: 19px;
+        text-align: center;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 46px;
+            height: 3px;
+            background-color: $primary;
+            position: absolute;
+            left: 50%;
+            bottom: -13px;
+            transform: translateX(-50%);
+        }
+    }
+    &-slider {
+        .slider {
+            &-item {
+                display: flex;
+
+                &__content {
+                    margin-right: 20px;
+
+                    img {
+                        margin-bottom: 0.87rem;
+                    }
+                    span {
+                        display: block;
+
+                        &:nth-child(3) {
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            &-dots {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3rem;
+                text-align: center;
+
+                li {
+                    width: 11px;
+                    height: 11px;
+                    margin: 5px;
+                    border: 2px solid transparent;
+                    border-radius: 50%;
+                    background-color: rgba(196, 196, 196, 0.4);
+                    cursor: pointer;
+
+                    &.slick-active {
+                        width: 13px;
+                        height: 13px;
+                        border: 2px solid $primary;
+                        background-color: transparent;
+                    }
+                }
+                button {
+                    display: none;
+                }
+            }
+        }
+        .slick {
+            &-btn {
+                width: 14px;
+                height: 14px;
+                background-color: transparent;
+                border: none;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                outline: none;
+                position: absolute;
+                bottom: 4px;
+            }
+            &-prev {
+                background-image: url('../images/icons/icon-arrow-prev.svg');
+                left: 44%;
+            }
+            &-next {
+                background-image: url('../images/icons/icon-arrow-next.svg');
+                right: 44%;
+            }
+        }
+    }
+}
