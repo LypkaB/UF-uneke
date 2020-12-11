@@ -401,7 +401,7 @@ li {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-Regular.otf") format("opentype"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
+  src: url("../font/Gilroy-Regular.otf") format("opentype"), url("../font/Gilroy-Regular.woff") format("woff"), url("../font/Gilroy-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;

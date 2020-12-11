@@ -2,34 +2,32 @@
     margin-top: -3.12rem;
     margin-bottom: 5rem;
 
-    .list-group {
-        .list-group-item {
-            padding-top: 1.33rem;
-            padding-bottom: 1.33rem;
-            border-radius: 0;
-            border-color: transparent;
-            background-color: $primary;
-            color: white;
-            text-align: center;
-            position: relative;
+    .list-group .list-group-item {
+        padding-top: 1.33rem;
+        padding-bottom: 1.33rem;
+        border-radius: 0;
+        border-color: transparent;
+        background-color: $primary;
+        color: white;
+        text-align: center;
+        position: relative;
 
-            &::after {
-                content: '';
-                width: 71px;
-                height: 1px;
-                background-color: white;
-                position: absolute;
-                top: 50%;
-                right: -36px;
-                transform: rotate(90deg) translateY(-50%);
-            }
-            span {
-                display: block;
-                font-size: 19px;
-            }
-            &:last-child::after {
-                display: none;
-            }
+        &::after {
+            content: '';
+            width: 71px;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            right: -36px;
+            transform: rotate(90deg) translateY(-50%);
+        }
+        span {
+            display: block;
+            font-size: 19px;
+        }
+        &:last-child::after {
+            display: none;
         }
     }
 }
